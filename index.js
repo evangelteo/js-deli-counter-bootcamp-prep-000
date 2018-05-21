@@ -19,7 +19,7 @@ function currentLine(deliLine) {
   else {
     var newstring = "The line is currently:"
     for (let i = 0; i < deliLine.length-1; i++) {
-      newstring = newstring + i+1 +". "+deliLine[i]+", "
+      newstring = newstring + (i+1) +". "+deliLine[i]+", "
     }
     newstring = newstring + deliLine.length+". "+deliLine[deliLine.length-1]
   }
