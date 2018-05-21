@@ -17,11 +17,11 @@ function currentLine(deliLine) {
     return "The line is currently empty."
   }
   else {
-    var newarray = ["The line is currently:"]
+    var newstring = "The line is currently:"
     for (let i = 0; i < deliLine.length-1; i++) {
-      newarray.push(i+1 +". "+deliLine[i]+", ")
+      newstring = newstring + i+1 +". "+deliLine[i]+", ")
     }
-    newarray.push(deliLine.length+". "+deliLine[deliLine.length-1])
+    newstring = newstring + deliLine.length+". "+deliLine[deliLine.length-1])
   }
-  newarray.values()
+  return newstring
 }
