@@ -23,5 +23,5 @@ function currentLine(deliLine) {
     }
     newarray.push(deliLine.length+". "+deliLine[deliLine.length-1])
   }
-  return newarray.values()
+  newarray.values()
 }
